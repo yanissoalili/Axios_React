@@ -1,5 +1,6 @@
 import React from 'react'
-
+// we use withRouter to have information about routing or routing props for the parents elements
+// import { withRouter } from 'react-router-dom'
 import './Post.css'
 
 const post = (props) => (
@@ -10,5 +11,5 @@ const post = (props) => (
     </div>
   </article>
 )
-
+// export default withRouter(post)
 export default post
