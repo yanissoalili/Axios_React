@@ -9,6 +9,11 @@ import AsyncComponent from '../../hoc/AsyncComponent'
 const AsyncNewPost = AsyncComponent(()=>{
   return import ('./NewPost/NewPost')
 })  
+// version 16.6 and higher we use 
+// const AsyncNewpost =  React.lazy(() => import './NewPost/NewPost')
+// 1 we must {suspense} from 'react'
+// and <Route path='/new-Post' render={()=> <Suspense fallback={<div> Loading  </div>}>
+// <AsyncNewPost/> </Suspense>}
 class Blog extends Component {
   state={
     auth:true 
